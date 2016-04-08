@@ -5,7 +5,7 @@ A Sample repo demonstrating how to test Crosswalk Apps with Calabash
 ### Start Calabash Android Console
 
 ```
-calabash-android console .\app\dist\android-debug.apk
+calabash-android console .\app\dist\sample-app-crosswalk-16.apk
 reinstall_apps
 start_test_server_in_background
 ```
