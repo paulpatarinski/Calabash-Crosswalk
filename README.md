@@ -10,7 +10,19 @@ reinstall_apps
 start_test_server_in_background
 ```
 
-#### Query for Web Elements
+- Query for Web Elements
 ```
-query("org.xwalk.core.internal.XWalkContent$1 css:'*'")
+query("org.xwalk.core.internal.XWalkContent$1 css:'h2'")
+```
+
+
+### Start Xamarin UITest Repl
+
+```
+.\tests\Xamarin.UITest.1.3.6\tools\test-cloud.exe repl .\app\dist\sample-app-crosswalk-16.apk
+```
+
+- Query for Web Elements
+```
+app.Query(c => c.Raw("org.xwalk.core.internal.XWalkContent$1 css:'h2'"))
 ```
